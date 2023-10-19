@@ -1,0 +1,23 @@
+body {
+	background-color: #333;
+	color: white;
+	font-family: Arial;
+}
+
+
+canvas {
+	background-color: #ccc;
+	flex-shrink: 0;
+}
+
+.main {
+	display: inline-flex;
+	flex-shrink: 0;
+	min-width: 100vw;
+	width: 100vw;
+	height: 600px
+}
+
+.info {
+	padding-left: 20px;
+}

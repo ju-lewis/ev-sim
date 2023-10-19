@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EvSim</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./styles.css">
+	</head>
+	<body>
+		<div class="main">
+			<canvas id="canvas" width="800" height="600"
+				style="border: 3px solid #aaa; flex-shrink: 0;
+				min-width: 800px; max-height: 600px;"></canvas>
+			<div class="info" style="flex-shrink: 0;">
+				<h1>ID: <span id="id"></span></h1>
+				<h1>Name: <span id="name"></span></h1>
+				<h2>Age: <span id="age"></span></h2>
+				<h2>Energy: <span id="energy"></span></h2>
+				<h2>Currently: <span id="activity"></span></h2>
+				<h2>Standing on: <span id="tile"></span></h2>
+				<canvas id="networkCanvas" width="400" height="400"
+					style="background-color: #333;"></canvas>
+			</div>
+		</div>
+		<div id="sim-info">
+			<h1>Population: <span id="count"></span> Births: <span
+					id="births"></span></h1>
+		</div>
+		<script type="module" src="/main.js"></script>
+		<script type="module" src="/ev_sim.js"></script>
+	</body>
+</html>
