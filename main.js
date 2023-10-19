@@ -1,4 +1,4 @@
-export const mutationRate = 0.15;
+export const mutationRate = 0.35;
 
 export class Neuron {
 	constructor(activationFn, nextWidth) {

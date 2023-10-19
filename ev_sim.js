@@ -13,14 +13,14 @@ const sizeScaling = 0.05;
 const baseFoodEnergyGain = 80;
 const diminishingReturnsFactor = 2.3;
 const swimmingCost = 0.15;
-const tileBaseFoodContent = 90;
+const tileBaseFoodContent = 50;
 const movingCost = 0.02;
 const foodAbundance = 0.5;
 const agePenalty = 0.002;
 const reproductionBenefit = 0.018;
 
 const tileSize = 20;
-const startingCreatures = 250;
+const startingCreatures = 50;
 const energyLoss = 0.02;
 const dayLen = 24;
 const networkStructure = [5, 6, 4];
@@ -288,7 +288,7 @@ function drawFrame() {
 			for(let i=0; i<map.length; i++) {
 				for(let j=0; j<map[i].length; j++) {
 
-					if(map[i][j].type == 1 && 
+					if(map[i][j].type == 0 && 
 						Math.random() > 1 - foodAbundance) {
 						// Replenish food
 						map[i][j].food += tileBaseFoodContent/6;
